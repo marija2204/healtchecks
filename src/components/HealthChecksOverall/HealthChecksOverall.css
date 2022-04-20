@@ -1,0 +1,19 @@
+.example {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color:white;
+    color: black;
+    text-align: center;
+}
+
+
+.example div:nth-child(1),.example div:nth-child(2),.example div:nth-child(3){
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

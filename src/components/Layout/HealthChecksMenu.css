@@ -1,0 +1,19 @@
+.menu-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.menu-item div:nth-child(1),.menu-item div:nth-child(2),.menu-item div:nth-child(3){
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

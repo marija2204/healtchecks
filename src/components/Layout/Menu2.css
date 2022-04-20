@@ -1,0 +1,17 @@
+.menu2-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
+
+  .menu2-item div:nth-child(1),.menu2-item div:nth-child(2),.menu2-item div:nth-child(3),.menu2-item div:nth-child(4){
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

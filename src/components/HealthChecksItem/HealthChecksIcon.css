@@ -1,0 +1,10 @@
+.healthy{
+    color: green
+}
+.degraded{
+    color: rgb(197, 197, 12);
+   
+}
+.unhealty{
+    color: red;
+}
