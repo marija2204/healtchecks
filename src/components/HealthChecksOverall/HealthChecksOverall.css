@@ -17,3 +17,12 @@
     align-items: center;
     
 }
+.error {
+    text-align: center;
+    color: red;
+}
+
+.DatasLoading{
+    text-align: center;
+    color: black;
+  }
