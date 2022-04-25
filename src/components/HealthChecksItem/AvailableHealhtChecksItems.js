@@ -35,7 +35,7 @@ const AvailableHealthChecksItems = () => {
            setHttpError(error.message);
            setIsLoading(false);
       });
-    },[])
+   },[]);
 
     if(isLoading) {
       return <section className='DatasLoading'>
