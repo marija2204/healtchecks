@@ -7,13 +7,15 @@ import TimeOfChange from "./TimeOfChange";
 const Header = (props) => {
     
 
-    return <Fragment>
+    return (
+    <Fragment>
         <header className="header">
             <h1><GoHeart/> Health Checks status</h1>
             <TimeOfChange timeOut={props.timeOut} setTimeout={props.setTimeout}/>
         </header>
         <HealthChecksMenu/>
     </Fragment>
+    );
 };
 
 
