@@ -1,5 +1,7 @@
 import {useRef, useState} from "react";
-import './TimeOfChange.css'
+import './TimeOfChange.css';
+import PropTypes from 'prop-types';
+
 
 const TimeOfChange = (props) => {
     const[time, setTime] = useState(props.timeOut);
@@ -22,6 +24,11 @@ const TimeOfChange = (props) => {
                 </form>
             </div>
     );
+};
+
+TimeOfChange.propTypes = {
+    timeOut:  PropTypes.number.isRequired,
+    setTimeout: PropTypes.number.isRequired,
 };
 
 

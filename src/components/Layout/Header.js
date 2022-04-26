@@ -12,7 +12,7 @@ const Header = (props) => {
             <h1><GoHeart/> Health Checks status</h1>
             <TimeOfChange timeOut={props.timeOut} setTimeout={props.setTimeout}/>
         </header>
-        <HealthChecksMenu></HealthChecksMenu>
+        <HealthChecksMenu/>
     </Fragment>
 };
 
