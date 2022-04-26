@@ -5,13 +5,17 @@ import HealthChecksOverall from './components/HealthChecksOverall/HealthChecksOv
 import Header from './components/Layout/Header';
 import AvailableHealthChecksItems from './components/HealthChecksItem/AvailableHealhtChecksItems';
 
+import { useState } from 'react';
+
 function App() {
+  const[timeOut, setTimeout] = useState(1);
+
   return (
     <div>
-      <Header/>
-      <HealthChecksOverall/>
+      <Header timeOut={timeOut} setTimeout={setTimeout}/>
+      <HealthChecksOverall timeOut={timeOut}/>
       <Menu2/>
-      <AvailableHealthChecksItems/>
+      <AvailableHealthChecksItems timeOut={timeOut}/>
     </div>
   );
 }

@@ -3,14 +3,16 @@ import {useState,useEffect} from "react";
 import './HealthChecksOverall.css'
 import HealthChecksIcon from "../HealthChecksItem/HealthChecksIcon";
 
-const HealthChecksOverall = () => {
+const HealthChecksOverall = (props) => {
   const [status, setStatus]= useState();
   const [duration, setDuration] = useState();
   const [httpError, setHttpError] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
  useEffect(() => {
-  fetch('https://services.testnisite.com:8103/background/sport/health/ready').then(response => {  
+  const interval = setInterval(() => {
+    console.log('This will run every 2 seconds!');
+    fetch('https://services.testnisite.com:8103/background/sport/health/ready').then(response => {  
       if(!response.ok){
         
         if(response.status ==! 503){
@@ -29,8 +31,11 @@ const HealthChecksOverall = () => {
            setHttpError(error.message);
            setIsLoading(false);
      });
- 
- }, []);
+
+  }, Number(props.timeOut)* 1000);
+  return () => clearInterval(interval);
+}, [props.timeOut]);
+  
  
  if(isLoading) {
   return <section className='DatasLoading'>
