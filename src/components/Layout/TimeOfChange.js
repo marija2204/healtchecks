@@ -1,6 +1,6 @@
-import {useRef, useState} from "react";
+import { useState} from "react";
 import './TimeOfChange.css';
-import PropTypes from 'prop-types';
+
 
 
 const TimeOfChange = (props) => {
@@ -24,11 +24,6 @@ const TimeOfChange = (props) => {
                 </form>
             </div>
     );
-};
-
-TimeOfChange.propTypes = {
-    timeOut:  PropTypes.number.isRequired,
-    setTimeout: PropTypes.number.isRequired,
 };
 
 

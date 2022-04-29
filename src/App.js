@@ -6,7 +6,7 @@ import Header from './components/Layout/Header';
 import AvailableHealthChecksItems from './components/HealthChecksItem/AvailableHealhtChecksItems';
 
 import { useState } from 'react';
-
+ 
 function App() {
   const[timeOut, setTimeout] = useState(1);
 

@@ -11,7 +11,7 @@ const HealthChecksOverall = (props) => {
 
  useEffect(() => {
   const interval = setInterval(() => {
-    console.log('This will run every 2 seconds!');
+    
     fetch('https://services.testnisite.com:8103/background/sport/health/ready').then(response => {  
       if(!response.ok){
         

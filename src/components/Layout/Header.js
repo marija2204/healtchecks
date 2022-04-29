@@ -1,4 +1,4 @@
-import { Fragment, useRef} from "react";
+import { Fragment } from "react";
 import {GoHeart} from "react-icons/go";
 import HealthChecksMenu from './HealthChecksMenu'
 import './Header.css';
