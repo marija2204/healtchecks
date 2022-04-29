@@ -16,6 +16,7 @@ function App() {
       <HealthChecksOverall timeOut={timeOut}/>
       <Menu2/>
       <AvailableHealthChecksItems timeOut={timeOut}/>
+      <div>Test</div>
     </div>
   );
 }
