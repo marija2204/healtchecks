@@ -3,6 +3,7 @@ import { GoVerified } from "react-icons/go";
 import { RiErrorWarningFill} from "react-icons/ri";
 import './HealthChecksIcon.css';
 
+
 const HealthChecksIcon = (props) => {
      
     if(props.status === 'Healthy'){
@@ -13,4 +14,6 @@ const HealthChecksIcon = (props) => {
         return <span className="unhealthy"><RiErrorWarningFill/></span>
     }
 };
+
+
 export default HealthChecksIcon;

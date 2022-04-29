@@ -5,7 +5,7 @@ function Menu2(){
               <div>Name</div>
               <div>Health</div>
               <div>Description </div>
-              <div>Duration</div>
+              <div>Last sync</div>
         </div>
        
   
