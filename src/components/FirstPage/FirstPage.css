@@ -11,14 +11,14 @@
   .products h1 {
     text-transform: uppercase;
     color: #575757;
-    margin: 0;
-    font-size: 1rem;
+    margin: 2;
+    font-size: 2rem;
   }
   
 
-  .products button {
-    margin: 1rem;
-    border-radius: 6px;
+  .products div {
+    margin: 5rem;
+    
   }
 
   .link {
