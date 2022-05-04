@@ -1,6 +1,8 @@
 import './App.css'
 import FirstPage from './components/FirstPage/FirstPage';
 import Test1 from './pages/Test1';
+import Test2 from './pages/Test2';
+import Test3 from './pages/Test3';
 import {Route} from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 
@@ -16,10 +18,10 @@ function App() {
         <Test1/>
       </Route>
       <Route path="/test2">
-        <Test1/>
+        <Test2/>
       </Route>
       <Route path="/test3">
-        <Test1/>
+        <Test3/>
       </Route>
       </Switch>
 

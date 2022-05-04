@@ -3,6 +3,7 @@ import HealthChecksOverall from '../components/HealthChecksOverall/HealthChecksO
 import AvailableHealthChecksItems from '../components/HealthChecksItem/AvailableHealhtChecksItems';
 import HealthChecksMenu from '../components/Layout/HealthChecksMenu';
 import Menu2 from '../components/Layout/Menu2';
+import Header from '../components/Layout/Header';
 
 const  Test3 = () => {
   const[timeOut, setTimeout] = useState(1);
@@ -10,6 +11,8 @@ const  Test3 = () => {
 
   return (
    <Fragment>
+     <Header timeOut={timeOut} setTimeout={setTimeout}/>
+      <h1>Test 3</h1>
       <HealthChecksMenu/> 
       <HealthChecksOverall timeOut={timeOut}/>
       <Menu2/>

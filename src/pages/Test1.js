@@ -11,6 +11,7 @@ const  Test1 = () => {
   return (
    <Fragment>
       <Header timeOut={timeOut} setTimeout={setTimeout}/>
+      <h1>Test 1</h1>
       <HealthChecksMenu/> 
       <HealthChecksOverall timeOut={timeOut}/>
       <Menu2/>
