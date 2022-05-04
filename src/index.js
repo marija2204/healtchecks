@@ -7,8 +7,9 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
-<BrowserRouter>
-  <Provider store={store}>
+    <BrowserRouter>
+    <Provider store={store}>
     <App />
-  </Provider>
-</BrowserRouter>, document.getElementById('root'));
+    </Provider>
+    </BrowserRouter>
+, document.getElementById('root'));

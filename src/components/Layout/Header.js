@@ -4,23 +4,22 @@ import { selectActions } from "../../store/select";
 import {GoHeart} from "react-icons/go";
 import './Header.css';
 import TimeOfChange from "./TimeOfChange";
+import { useHistory } from "react-router-dom";
 
 
 const Header = (props) => {
-
-    const Select = useSelector( state => state.select.isSelected);
-    const dispatch = useDispatch();
+    const back = useHistory();
 
     const isBackHandler = () => {
-        dispatch(selectActions.toBeBack());
+        back.push('/');
     };
     
     return (
     <Fragment>
         <header className="header">
             <h1><GoHeart/> Health Checks status</h1>
-            {Select && <div><TimeOfChange timeOut={props.timeOut} setTimeout={props.setTimeout}/>
-            <button onClick={isBackHandler}>Back</button></div>}
+            <div><TimeOfChange timeOut={props.timeOut} setTimeout={props.setTimeout}/>
+            <button onClick={isBackHandler}>Back</button></div>
         </header>
     </Fragment>
     );
