@@ -2,15 +2,10 @@ import React from "react";
 import './FirstPage.css';
 import { Link } from "react-router-dom";
 import FirstPageTitle from "./FirstPageTitle";
+import { useSelector } from "react-redux";
 
 const FirstPage = () => {
-  // const Select = useSelector( state => state.select.isSelected)
-  // const dispatch = useDispatch();
-  
-  // const isSelectedHandler = () => {
-  //     dispatch(selectActions.isSelected());
-  //     console.log('test1',Select);
-  // };
+  const isAuth = useSelector(state => state.auth.isAuthenticated);
     return (
       <div>
        <FirstPageTitle/>

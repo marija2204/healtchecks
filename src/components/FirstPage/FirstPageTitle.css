@@ -1,7 +1,26 @@
 h1{ 
-   
     color: green;
     text-align: center;
-    font-size: 2rem;
-  
+    font-size: 1.5 rem;
+}
+p{
+    font-size: 0.6cm;
+   text-align: center;
+   color: green;
+}
+.firstpage {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(19, 109, 16);
+    color: white;
+    border-radius: 4px;
+    padding: 0.30rem 1.2rem;
+    border: 1px solid rgb(19, 109, 16);
+    margin: 0.2em;
+    margin-top: 1rem;
+    cursor: pointer;
+    align-items: center;
 }

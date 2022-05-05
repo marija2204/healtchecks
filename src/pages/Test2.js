@@ -12,7 +12,7 @@ const  Test2 = () => {
   return (
    <Fragment>
      <Header timeOut={timeOut} setTimeout={setTimeout}/>
-      <h1>Test 2</h1>
+     <p>Test 2</p>
       <HealthChecksMenu/> 
       <HealthChecksOverall timeOut={timeOut}/>
       <Menu2/>
