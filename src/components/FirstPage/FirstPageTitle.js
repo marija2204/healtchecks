@@ -2,11 +2,15 @@ import {GoHeart} from "react-icons/go";
 import './FirstPageTitle.css';
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/auth";
+import { useHistory } from "react-router-dom";
+
 
 const FirstPageTitle = () => {
     const dispatch = useDispatch();
+    const history = useHistory();
     const logoutHandler = () => {
        dispatch(authActions.logout());
+       history.push('/');
     };
 
     return (

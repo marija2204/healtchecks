@@ -5,9 +5,18 @@ import AvailableHealthChecksItems from '../components/HealthChecksItem/Available
 import HealthChecksMenu from '../components/Layout/HealthChecksMenu';
 import Menu2 from '../components/Layout/Menu2';
 import Header from '../components/Layout/Header';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 const  Test1 = () => {
   const[timeOut, setTimeout] = useState(1);
+  const isAuth = useSelector(state => state.auth.isAuthenticated);
+  const isAdmin = useSelector(state => state.auth.isAdmin);
+  const history = useHistory();
+
+  if(!isAuth && !isAdmin){
+    history.push("/");
+  }
   return (
    <Fragment>
       <Header timeOut={timeOut} setTimeout={setTimeout}/>

@@ -9,14 +9,14 @@ import { useHistory } from "react-router-dom";
 
 const Header = (props) => {
     const dispatch = useDispatch();
-    const back = useHistory();
+    const history = useHistory();
 
     const isBackHandler = () => {
-        back.push('/');
+        history.push('/firstpage');
     };
     
     const logoutHandler = () => {
-        back.push('/');
+       history.push('/');
        dispatch(authActions.logout());
     };
     
